@@ -1,0 +1,105 @@
+{
+  "methodology": {
+    "scope": "Compact JSON.stringify(events) UTF-8 arrays only; recording envelope, outcomes, transport and headers excluded.",
+    "compression": "All variants use identical gzip level 9 and Brotli quality 11 text-mode settings.",
+    "no_cursor_definition": "Remove only IncrementalSnapshot type 3 with source 1, 2, 6 or 12; retain DOM mutations, inputs, scroll and resize.",
+    "pointer_sources_removed": [
+      1,
+      2,
+      6,
+      12
+    ],
+    "caveat": "Source 2 includes Focus and Blur as well as pointer clicks. This removes pointer/interaction events, not merely the visible cursor.",
+    "final_state": "Fresh Meta + FullSnapshot supplied by caller, not the original initial snapshot; no history is preserved."
+  },
+  "variants": {
+    "with_cursor_timeline": {
+      "events": 118,
+      "raw_bytes": 122976,
+      "gzip_bytes": 19953,
+      "brotli_bytes": 15698
+    },
+    "no_cursor_timeline": {
+      "events": 31,
+      "raw_bytes": 114882,
+      "gzip_bytes": 19106,
+      "brotli_bytes": 15140
+    },
+    "no_cursor_final_frame": {
+      "events": 2,
+      "raw_bytes": 95403,
+      "gzip_bytes": 17321,
+      "brotli_bytes": 13861
+    }
+  },
+  "comparison": {
+    "pointer_events_removed": 87,
+    "no_cursor_saving_vs_with_cursor": {
+      "raw_bytes": {
+        "bytes_saved": 8094,
+        "percent_saved": 6.58
+      },
+      "gzip_bytes": {
+        "bytes_saved": 847,
+        "percent_saved": 4.24
+      },
+      "brotli_bytes": {
+        "bytes_saved": 558,
+        "percent_saved": 3.55
+      }
+    },
+    "final_frame_saving_vs_no_cursor_timeline": {
+      "raw_bytes": {
+        "bytes_saved": 19479,
+        "percent_saved": 16.96
+      },
+      "gzip_bytes": {
+        "bytes_saved": 1785,
+        "percent_saved": 9.34
+      },
+      "brotli_bytes": {
+        "bytes_saved": 1279,
+        "percent_saved": 8.45
+      }
+    },
+    "final_frame_saving_vs_with_cursor_timeline": {
+      "raw_bytes": {
+        "bytes_saved": 27573,
+        "percent_saved": 22.42
+      },
+      "gzip_bytes": {
+        "bytes_saved": 2632,
+        "percent_saved": 13.19
+      },
+      "brotli_bytes": {
+        "bytes_saved": 1837,
+        "percent_saved": 11.7
+      }
+    }
+  },
+  "counts": {
+    "by_source": {
+      "EventType:4": 1,
+      "EventType:2": 1,
+      "Incremental:MouseMove": 10,
+      "Incremental:MouseInteraction": 77,
+      "Incremental:Mutation": 15,
+      "Incremental:Input": 3,
+      "Incremental:Scroll": 11
+    },
+    "mouse_interaction_subtypes": {
+      "MouseDown": 15,
+      "Focus": 16,
+      "MouseUp": 15,
+      "Click": 15,
+      "Blur": 16
+    },
+    "pointer_positions": 15
+  },
+  "warnings": [
+    "One session is illustrative; duration, movement sampling, DOM changes, images and interaction frequency affect the result.",
+    "Hiding the replay cursor or mouse tail does not reduce stored event bytes.",
+    "Filtering one recording makes content/actions/timing identical; it measures payload savings, not recorder CPU savings.",
+    "Preserve all prerequisite mutations when producing a final state; simply taking the last incremental event cannot recreate the view."
+  ]
+}

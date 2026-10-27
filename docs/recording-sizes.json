@@ -1,0 +1,118 @@
+[
+  {
+    "name": "timeline-url",
+    "eventCount": 7,
+    "recordingBytes": 98746,
+    "recordingGzipBytes": 18229,
+    "eventBytes": 98353,
+    "images": [
+      {
+        "id": "image-cors",
+        "sourceBytes": 30,
+        "embeddedBytes": 0
+      },
+      {
+        "id": "image-no-cors",
+        "sourceBytes": 38,
+        "embeddedBytes": 0
+      },
+      {
+        "id": "image-base64",
+        "sourceBytes": 15046,
+        "embeddedBytes": 0
+      },
+      {
+        "id": "image-public",
+        "sourceBytes": 49,
+        "embeddedBytes": 0
+      }
+    ]
+  },
+  {
+    "name": "timeline-inline",
+    "eventCount": 7,
+    "recordingBytes": 104083,
+    "recordingGzipBytes": 21839,
+    "eventBytes": 103691,
+    "images": [
+      {
+        "id": "image-cors",
+        "sourceBytes": 30,
+        "embeddedBytes": 1106
+      },
+      {
+        "id": "image-no-cors",
+        "sourceBytes": 38,
+        "embeddedBytes": 0
+      },
+      {
+        "id": "image-base64",
+        "sourceBytes": 15046,
+        "embeddedBytes": 1102
+      },
+      {
+        "id": "image-public",
+        "sourceBytes": 49,
+        "embeddedBytes": 3030
+      }
+    ]
+  },
+  {
+    "name": "final-url",
+    "eventCount": 2,
+    "recordingBytes": 95633,
+    "recordingGzipBytes": 17717,
+    "eventBytes": 95398,
+    "images": [
+      {
+        "id": "image-cors",
+        "sourceBytes": 30,
+        "embeddedBytes": 0
+      },
+      {
+        "id": "image-no-cors",
+        "sourceBytes": 38,
+        "embeddedBytes": 0
+      },
+      {
+        "id": "image-base64",
+        "sourceBytes": 15046,
+        "embeddedBytes": 0
+      },
+      {
+        "id": "image-public",
+        "sourceBytes": 49,
+        "embeddedBytes": 0
+      }
+    ]
+  },
+  {
+    "name": "final-inline",
+    "eventCount": 2,
+    "recordingBytes": 100970,
+    "recordingGzipBytes": 21329,
+    "eventBytes": 100736,
+    "images": [
+      {
+        "id": "image-cors",
+        "sourceBytes": 30,
+        "embeddedBytes": 1106
+      },
+      {
+        "id": "image-no-cors",
+        "sourceBytes": 38,
+        "embeddedBytes": 0
+      },
+      {
+        "id": "image-base64",
+        "sourceBytes": 15046,
+        "embeddedBytes": 1102
+      },
+      {
+        "id": "image-public",
+        "sourceBytes": 49,
+        "embeddedBytes": 3030
+      }
+    ]
+  }
+]

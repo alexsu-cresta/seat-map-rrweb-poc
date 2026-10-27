@@ -1,0 +1,350 @@
+{
+  "generated_at": "2026-10-26T19:06:03.389Z",
+  "project_root": "/Users/alex.su/Develop/Test/seat-map-rrweb-poc",
+  "versions": {
+    "node": "v22.21.1",
+    "esbuild": "0.28.2",
+    "@rrweb/record": "2.2.0",
+    "@rrweb/replay": "2.2.0",
+    "@rrweb/types": "2.2.0",
+    "rrweb": "2.2.0"
+  },
+  "methodology": {
+    "byte_units": "Actual bytes; decimal KB = bytes / 1000",
+    "build": "Minified browser ESM; es2022; bundle true; tree shaking true; production NODE_ENV; no source maps; legal comments removed",
+    "adapters": "Minimal exported functions that call the real record() and Replayer constructor; no app UI, protocol, sample data, framework, or transport",
+    "gzip": "zlib gzip level 9, measured independently per emitted JS/CSS file",
+    "brotli": "Brotli quality 11 text mode, measured independently per emitted JS/CSS file",
+    "css": "Replay CSS imported and emitted separately; totals include one CSS response",
+    "current_dist": "Existing development app outputs; not rebuilt or modified, and not rrweb-only or production-minified"
+  },
+  "measurements": {
+    "recorder_only_split": {
+      "files": [
+        {
+          "file": "bundles/recorder_only_split/bundle.js",
+          "kind": "js",
+          "sha256": "c61cb6dee952873bdd26762f827f7ef89708b6f15c77b501665c714b09d3fe8f",
+          "raw_bytes": 75768,
+          "gzip_bytes": 23490,
+          "brotli_bytes": 20977
+        }
+      ],
+      "javascript": {
+        "raw_bytes": 75768,
+        "gzip_bytes": 23490,
+        "brotli_bytes": 20977
+      },
+      "css": {
+        "raw_bytes": 0,
+        "gzip_bytes": 0,
+        "brotli_bytes": 0
+      },
+      "total": {
+        "raw_bytes": 75768,
+        "gzip_bytes": 23490,
+        "brotli_bytes": 20977
+      },
+      "bundler_inputs": [
+        "node_modules/@rrweb/record/dist/record.js",
+        "entry.js"
+      ]
+    },
+    "player_only_split": {
+      "files": [
+        {
+          "file": "bundles/player_only_split/bundle.js",
+          "kind": "js",
+          "sha256": "3b1f0a49660c18381c2b90ebe4fac1501643aed199204b863c7a762ae15572fd",
+          "raw_bytes": 200000,
+          "gzip_bytes": 63548,
+          "brotli_bytes": 39986
+        },
+        {
+          "file": "bundles/player_only_split/bundle.css",
+          "kind": "css",
+          "sha256": "748bdd1ca528abcb9a57755e1674869e1069ffe448b693a857326cc35bc1ede2",
+          "raw_bytes": 1923,
+          "gzip_bytes": 937,
+          "brotli_bytes": 803
+        }
+      ],
+      "javascript": {
+        "raw_bytes": 200000,
+        "gzip_bytes": 63548,
+        "brotli_bytes": 39986
+      },
+      "css": {
+        "raw_bytes": 1923,
+        "gzip_bytes": 937,
+        "brotli_bytes": 803
+      },
+      "total": {
+        "raw_bytes": 201923,
+        "gzip_bytes": 64485,
+        "brotli_bytes": 40789
+      },
+      "bundler_inputs": [
+        "node_modules/@rrweb/replay/dist/replay.js",
+        "node_modules/@rrweb/replay/dist/style.css",
+        "entry.js"
+      ]
+    },
+    "combined_split_packages": {
+      "files": [
+        {
+          "file": "bundles/combined_split_packages/bundle.js",
+          "kind": "js",
+          "sha256": "26eb92bcdc60229fb8ed5c0b48e54eaef21d4702bb8ae46acc25b3969e4f6558",
+          "raw_bytes": 276037,
+          "gzip_bytes": 86556,
+          "brotli_bytes": 56860
+        },
+        {
+          "file": "bundles/combined_split_packages/bundle.css",
+          "kind": "css",
+          "sha256": "748bdd1ca528abcb9a57755e1674869e1069ffe448b693a857326cc35bc1ede2",
+          "raw_bytes": 1923,
+          "gzip_bytes": 937,
+          "brotli_bytes": 803
+        }
+      ],
+      "javascript": {
+        "raw_bytes": 276037,
+        "gzip_bytes": 86556,
+        "brotli_bytes": 56860
+      },
+      "css": {
+        "raw_bytes": 1923,
+        "gzip_bytes": 937,
+        "brotli_bytes": 803
+      },
+      "total": {
+        "raw_bytes": 277960,
+        "gzip_bytes": 87493,
+        "brotli_bytes": 57663
+      },
+      "bundler_inputs": [
+        "node_modules/@rrweb/record/dist/record.js",
+        "node_modules/@rrweb/replay/dist/replay.js",
+        "node_modules/@rrweb/replay/dist/style.css",
+        "entry.js"
+      ]
+    },
+    "recorder_only_unified": {
+      "files": [
+        {
+          "file": "bundles/recorder_only_unified/bundle.js",
+          "kind": "js",
+          "sha256": "752817c8d62052ae54fb83fc3485619d251088ef3c30c89fd5b307401e04a142",
+          "raw_bytes": 182357,
+          "gzip_bytes": 58034,
+          "brotli_bytes": 37064
+        }
+      ],
+      "javascript": {
+        "raw_bytes": 182357,
+        "gzip_bytes": 58034,
+        "brotli_bytes": 37064
+      },
+      "css": {
+        "raw_bytes": 0,
+        "gzip_bytes": 0,
+        "brotli_bytes": 0
+      },
+      "total": {
+        "raw_bytes": 182357,
+        "gzip_bytes": 58034,
+        "brotli_bytes": 37064
+      },
+      "bundler_inputs": [
+        "node_modules/rrweb/dist/rrweb.js",
+        "entry.js"
+      ]
+    },
+    "player_only_unified": {
+      "files": [
+        {
+          "file": "bundles/player_only_unified/bundle.js",
+          "kind": "js",
+          "sha256": "0d39e3d66051fef76fe83b9286bfc15ec44d6f6f8de85bbd08965298e3e192f2",
+          "raw_bytes": 264034,
+          "gzip_bytes": 82477,
+          "brotli_bytes": 56192
+        },
+        {
+          "file": "bundles/player_only_unified/bundle.css",
+          "kind": "css",
+          "sha256": "748bdd1ca528abcb9a57755e1674869e1069ffe448b693a857326cc35bc1ede2",
+          "raw_bytes": 1923,
+          "gzip_bytes": 937,
+          "brotli_bytes": 803
+        }
+      ],
+      "javascript": {
+        "raw_bytes": 264034,
+        "gzip_bytes": 82477,
+        "brotli_bytes": 56192
+      },
+      "css": {
+        "raw_bytes": 1923,
+        "gzip_bytes": 937,
+        "brotli_bytes": 803
+      },
+      "total": {
+        "raw_bytes": 265957,
+        "gzip_bytes": 83414,
+        "brotli_bytes": 56995
+      },
+      "bundler_inputs": [
+        "node_modules/rrweb/dist/rrweb.js",
+        "node_modules/@rrweb/replay/dist/style.css",
+        "entry.js"
+      ]
+    },
+    "combined_unified_package": {
+      "files": [
+        {
+          "file": "bundles/combined_unified_package/bundle.js",
+          "kind": "js",
+          "sha256": "4f8c2c1baa35edbb78122947456a17c5414dc4608108ec8a4817b16546e5d3db",
+          "raw_bytes": 264139,
+          "gzip_bytes": 82527,
+          "brotli_bytes": 56215
+        },
+        {
+          "file": "bundles/combined_unified_package/bundle.css",
+          "kind": "css",
+          "sha256": "748bdd1ca528abcb9a57755e1674869e1069ffe448b693a857326cc35bc1ede2",
+          "raw_bytes": 1923,
+          "gzip_bytes": 937,
+          "brotli_bytes": 803
+        }
+      ],
+      "javascript": {
+        "raw_bytes": 264139,
+        "gzip_bytes": 82527,
+        "brotli_bytes": 56215
+      },
+      "css": {
+        "raw_bytes": 1923,
+        "gzip_bytes": 937,
+        "brotli_bytes": 803
+      },
+      "total": {
+        "raw_bytes": 266062,
+        "gzip_bytes": 83464,
+        "brotli_bytes": 57018
+      },
+      "bundler_inputs": [
+        "node_modules/rrweb/dist/rrweb.js",
+        "node_modules/@rrweb/replay/dist/style.css",
+        "entry.js"
+      ]
+    }
+  },
+  "comparisons": {
+    "separate_split_packages_sum_with_css": {
+      "raw_bytes": 277691,
+      "gzip_bytes": 87975,
+      "brotli_bytes": 61766
+    },
+    "combined_split_packages_saving_vs_separate": {
+      "raw_bytes": {
+        "bytes_saved": -269,
+        "percent_saved": -0.1
+      },
+      "gzip_bytes": {
+        "bytes_saved": 482,
+        "percent_saved": 0.55
+      },
+      "brotli_bytes": {
+        "bytes_saved": 4103,
+        "percent_saved": 6.64
+      }
+    },
+    "separate_unified_package_sum_with_css": {
+      "raw_bytes": 448314,
+      "gzip_bytes": 141448,
+      "brotli_bytes": 94059
+    },
+    "combined_unified_package_saving_vs_separate": {
+      "raw_bytes": {
+        "bytes_saved": 182252,
+        "percent_saved": 40.65
+      },
+      "gzip_bytes": {
+        "bytes_saved": 57984,
+        "percent_saved": 40.99
+      },
+      "brotli_bytes": {
+        "bytes_saved": 37041,
+        "percent_saved": 39.38
+      }
+    },
+    "combined_unified_saving_vs_combined_split": {
+      "raw_bytes": {
+        "bytes_saved": 11898,
+        "percent_saved": 4.28
+      },
+      "gzip_bytes": {
+        "bytes_saved": 4029,
+        "percent_saved": 4.6
+      },
+      "brotli_bytes": {
+        "bytes_saved": 645,
+        "percent_saved": 1.12
+      }
+    }
+  },
+  "current_dist": [
+    {
+      "file": "dist/host.js",
+      "raw_bytes": 17555,
+      "gzip_bytes": 4822,
+      "brotli_bytes": 4188
+    },
+    {
+      "file": "dist/runner.js",
+      "raw_bytes": 203978,
+      "gzip_bytes": 48815,
+      "brotli_bytes": 41011
+    },
+    {
+      "file": "dist/player.js",
+      "raw_bytes": 465346,
+      "gzip_bytes": 94407,
+      "brotli_bytes": 56574
+    },
+    {
+      "file": "dist/host.css",
+      "raw_bytes": 10645,
+      "gzip_bytes": 2728,
+      "brotli_bytes": 2340
+    },
+    {
+      "file": "dist/runner.css",
+      "raw_bytes": 10556,
+      "gzip_bytes": 2666,
+      "brotli_bytes": 2300
+    },
+    {
+      "file": "dist/player.css",
+      "raw_bytes": 2927,
+      "gzip_bytes": 1235,
+      "brotli_bytes": 1055
+    }
+  ],
+  "caveats": [
+    "These are isolated rrweb-containing minimal bundles, not a measured delta against an existing production application build.",
+    "True marginal cost needs matched before/after production builds; already-shared modules, chunking, import paths and bundler optimizations change the result.",
+    "The installed split package distributions are flattened self-contained ESM. Bundling them together does not automatically merge equivalent internal functions.",
+    "The installed unified rrweb entry allows shared recorder/replayer internals to be reused within that package; compare measured output rather than summing standalone sizes.",
+    "The unified entry is substantially heavier for recorder-only and player-only imports in this version; smaller combined output does not make it the best choice for a recorder-only widget.",
+    "Separate-origin recorder and player pages cannot share a single in-memory module; their downloads and caches are separate deployment concerns.",
+    "Dynamic importing replay can defer its download until a historical view is opened; it does not remove the bytes once replay is used.",
+    "Disabling canvas or fonts at runtime does not guarantee that those code paths are removed by the bundler.",
+    "Server/CDN compression settings, cache state, header overhead, loading policy, parse time and execution cost are not modeled.",
+    "Current local server responses are not compressed; gzip/Brotli columns are modeled production delivery sizes, not observed local transfers."
+  ]
+}
